@@ -27,4 +27,5 @@ void testRayBuilding()
 
 main() {
     testSlopeAngles();
+    std::cout << "Everything fine!" << std::endl;
 }

@@ -2,6 +2,22 @@
 #include <opencv/cv.h>
 #include "contour.hpp"
 
+inline float computeAngle(const float dx, const float dy)
+{    
+    if(dx == 0 && dy == 0)
+        return 0;
+    return atan2(dy,dx)*180/M_PI;    
+}
+
+inline float degreeToRadiant(const float degree)
+{
+    return M_PI*degree/180;
+}
+
+inline float length(cv::Vec2f vector) {
+    return hypot(vector[0], vector[1]);
+}
+
 class Ray;
 
 class PointOfInterest : public cv::Point {
