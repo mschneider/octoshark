@@ -1,0 +1,5 @@
+Octoshark is a simple OCR preprocessor using OpenCV.
+
+It identifies regions containing text in a given picture by measuring
+stroke-width - the distance between parallel lines. It was written in Summer
+2010 as an exercise for a college seminar about multi-media analysis.
